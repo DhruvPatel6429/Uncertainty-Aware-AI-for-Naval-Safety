@@ -1,0 +1,27 @@
+# Perception-focused pipeline config (for train_perception.py)
+perception:
+  uq_method: bayesian
+  uq_config:
+    n_mc_samples: 15
+    reject_threshold: 0.5
+    temperature: 1.0
+  confidence_threshold: 0.5
+  epistemic_threshold: 0.4
+  ood_threshold: 0.7
+  n_classes: 5
+
+prediction:
+  uq_method: ensemble
+  uq_config:
+    temperature: 1.0
+  horizon_seconds: 30
+  n_history_steps: 10
+
+planning:
+  colregs_penalty_weight: 1.0
+  uncertainty_penalty_weight: 1.0
+  safety_margin_m: 50.0
+
+decision:
+  collision_prob_bound: 1.0e-4
+  epistemic_reject_threshold: 0.7

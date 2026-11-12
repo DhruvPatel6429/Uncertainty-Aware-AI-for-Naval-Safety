@@ -1,0 +1,51 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Reports & artefacts (generated at runtime)
+reports/
+mlruns/
+outputs/
+multirun/
+logs/
+*.log
+
+# Model weights (large, not versioned)
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Datasets (downloaded at runtime)
+data/raw/
+data/processed/
+
+# Hydra outputs
+.hydra/
+
+# Node (dashboard)
+dashboard/node_modules/
+dashboard/.next/
+dashboard/next-env.d.ts
+
+# Docker
+.docker/

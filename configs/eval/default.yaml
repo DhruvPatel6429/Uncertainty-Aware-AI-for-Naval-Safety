@@ -1,0 +1,15 @@
+# Default evaluation config
+n_calibration: 200
+n_test: 200
+n_classes: 5
+feature_dim: 32
+alpha: 0.1
+seed: 0
+scenarios:
+  - head_on
+  - crossing
+  - overtaking
+  - multi_vessel
+  - ood_stress
+  - sensor_failure
+  - adversarial

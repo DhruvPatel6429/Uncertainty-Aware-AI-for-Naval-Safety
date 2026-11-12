@@ -1,0 +1,4 @@
+# Evidential DL configuration
+method: evidential
+reject_threshold: 0.5
+kl_regularisation: 0.1

@@ -1,0 +1,6 @@
+# Deep Ensemble configuration
+method: ensemble
+n_members: 5
+temperature: 1.0
+reject_threshold: 0.5
+diversity_weight: 0.0

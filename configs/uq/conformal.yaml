@@ -1,0 +1,5 @@
+# Conformal Prediction configuration
+method: conformal
+alpha: 0.1
+score: thr            # thr | aps
+reject_threshold: 0.7

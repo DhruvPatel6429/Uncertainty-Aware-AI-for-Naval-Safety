@@ -1,0 +1,20 @@
+# Dockerfile for the UQ-AI Naval dashboard (Next.js)
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy package files and install dependencies
+COPY dashboard/package.json dashboard/package-lock.json ./
+RUN npm ci --prefer-offline
+
+# Copy source
+COPY dashboard/ ./
+
+# Build the dashboard
+RUN npm run build
+
+# Expose dashboard port
+EXPOSE 3000
+
+# Run the production server
+CMD ["npm", "start"]

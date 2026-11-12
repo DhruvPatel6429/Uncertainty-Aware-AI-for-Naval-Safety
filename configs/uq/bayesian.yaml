@@ -1,0 +1,5 @@
+# Bayesian DL configuration
+method: bayesian
+n_mc_samples: 10
+reject_threshold: 0.5
+temperature: 1.0

@@ -1,0 +1,28 @@
+# UQ-AI Naval — default configuration
+# This file is loaded by Hydra when running CLI scripts.
+
+defaults:
+  - pipeline: default
+  - uq: bayesian
+  - eval: default
+  - _self_
+
+# Global project metadata
+project:
+  name: "uq-naval"
+  version: "1.0.0"
+  description: "Uncertainty-Aware AI for Safety-Critical Naval Applications"
+
+# Reproducibility
+seed: 0
+
+# Logging
+logging:
+  level: INFO
+  log_file: null
+
+# Output directories
+outputs:
+  reports_dir: "reports"
+  checkpoints_dir: "checkpoints"
+  logs_dir: "logs"
